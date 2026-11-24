@@ -1,0 +1,23 @@
+{
+  "name": "the-forge-party-manager",
+  "version": "1.0.0",
+  "description": "Bot Discord pencari party The Forge dengan penyimpanan permanen",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=22"
+  },
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "deploy": "node src/deploy-commands.js",
+    "test": "node --test",
+    "check": "node scripts/check-syntax.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.2.0",
+    "discord.js": "^14.28.1",
+    "dotenv": "^16.6.1"
+  }
+}
